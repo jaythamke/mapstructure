@@ -24,8 +24,8 @@
 </div><!-- #lowframe -->
 
 <div id="topbar" class="wide"><div class="container">
-<div class="top-heading" id="heading-wide"><a href="/pkg/">Go Documentation Server</a></div>
-<div class="top-heading" id="heading-narrow"><a href="/pkg/">GoDoc</a></div>
+<div class="top-heading" id="heading-wide"><a href="https://golang.org/pkg/">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="https://golang.org/pkg/">GoDoc</a></div>
 <a href="#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
 <form method="GET" action="/search">
 <div id="menu">
@@ -442,7 +442,7 @@ for other features and options that are supported.
 				
 				
 			</h2>
-			<pre>func Decode(input interface{}, output interface{}) <a href="/pkg/builtin/#error">error</a></pre>
+			<pre>func Decode(input interface{}, output interface{}) <a href="https://golang.org/pkg/builtin/#error">error</a></pre>
 			<p>
 Decode takes an input structure and uses reflection to translate it to
 the output structure. output must be a pointer to a map or struct.
@@ -825,7 +825,7 @@ fmt.Printf(&#34;%#v&#34;, result)
 			</h2>
 			<pre>func DecodeHookExec(
     raw <a href="#DecodeHookFunc">DecodeHookFunc</a>,
-    from <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Value">Value</a>, to <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Value">Value</a>) (interface{}, <a href="/pkg/builtin/#error">error</a>)</pre>
+    from <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Value">Value</a>, to <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Value">Value</a>) (interface{}, <a href="https://golang.org/pkg/builtin/#error">error</a>)</pre>
 			<p>
 DecodeHookExec executes the given decode hook. This should be used
 since it&#39;ll naturally degrade to the older backwards compatible DecodeHookFunc
@@ -843,7 +843,7 @@ that took reflect.Kind instead of reflect.Type.
 				
 				
 			</h2>
-			<pre>func DecodeMetadata(input interface{}, output interface{}, metadata *<a href="#Metadata">Metadata</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<pre>func DecodeMetadata(input interface{}, output interface{}, metadata *<a href="#Metadata">Metadata</a>) <a href="https://golang.org/pkg/builtin/#error">error</a></pre>
 			<p>
 DecodeMetadata is the same as Decode, but is shorthand to
 enable metadata collection. See DecoderConfig for more info.
@@ -860,7 +860,7 @@ enable metadata collection. See DecoderConfig for more info.
 				
 				
 			</h2>
-			<pre>func WeakDecode(input, output interface{}) <a href="/pkg/builtin/#error">error</a></pre>
+			<pre>func WeakDecode(input, output interface{}) <a href="https://golang.org/pkg/builtin/#error">error</a></pre>
 			<p>
 WeakDecode is the same as Decode but is shorthand to enable
 WeaklyTypedInput. See DecoderConfig for more info.
@@ -877,7 +877,7 @@ WeaklyTypedInput. See DecoderConfig for more info.
 				
 				
 			</h2>
-			<pre>func WeakDecodeMetadata(input interface{}, output interface{}, metadata *<a href="#Metadata">Metadata</a>) <a href="/pkg/builtin/#error">error</a></pre>
+			<pre>func WeakDecodeMetadata(input interface{}, output interface{}, metadata *<a href="#Metadata">Metadata</a>) <a href="https://golang.org/pkg/builtin/#error">error</a></pre>
 			<p>
 WeakDecodeMetadata is the same as Decode, but is shorthand to
 enable both WeaklyTypedInput and metadata collection. See
@@ -896,9 +896,9 @@ DecoderConfig for more info.
 				
 			</h2>
 			<pre>func WeaklyTypedHook(
-    f <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Kind">Kind</a>,
-    t <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Kind">Kind</a>,
-    data interface{}) (interface{}, <a href="/pkg/builtin/#error">error</a>)</pre>
+    f <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Kind">Kind</a>,
+    t <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Kind">Kind</a>,
+    data interface{}) (interface{}, <a href="https://golang.org/pkg/builtin/#error">error</a>)</pre>
 			<p>
 WeaklyTypedHook is a DecodeHookFunc which adds support for weak typing to
 the decoder.
@@ -1016,7 +1016,7 @@ strings to net.IPNet
 					
 					
 				</h3>
-				<pre>func StringToSliceHookFunc(sep <a href="/pkg/builtin/#string">string</a>) <a href="#DecodeHookFunc">DecodeHookFunc</a></pre>
+				<pre>func StringToSliceHookFunc(sep <a href="https://golang.org/pkg/builtin/#string">string</a>) <a href="#DecodeHookFunc">DecodeHookFunc</a></pre>
 				<p>
 StringToSliceHookFunc returns a DecodeHookFunc that converts
 string to []string by splitting on the given sep.
@@ -1046,7 +1046,7 @@ strings to time.Duration.
 					
 					
 				</h3>
-				<pre>func StringToTimeHookFunc(layout <a href="/pkg/builtin/#string">string</a>) <a href="#DecodeHookFunc">DecodeHookFunc</a></pre>
+				<pre>func StringToTimeHookFunc(layout <a href="https://golang.org/pkg/builtin/#string">string</a>) <a href="#DecodeHookFunc">DecodeHookFunc</a></pre>
 				<p>
 StringToTimeHookFunc returns a DecodeHookFunc that converts
 strings to time.Time.
@@ -1070,7 +1070,7 @@ DecodeHookFuncKind is a DecodeHookFunc which knows only the Kinds of the
 source and target types.
 </p>
 
-			<pre>type DecodeHookFuncKind func(<a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Kind">Kind</a>, <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Kind">Kind</a>, interface{}) (interface{}, <a href="/pkg/builtin/#error">error</a>)</pre>
+			<pre>type DecodeHookFuncKind func(<a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Kind">Kind</a>, <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Kind">Kind</a>, interface{}) (interface{}, <a href="https://golang.org/pkg/builtin/#error">error</a>)</pre>
 
 			
 
@@ -1096,7 +1096,7 @@ DecodeHookFuncType is a DecodeHookFunc which has complete information about
 the source and target types.
 </p>
 
-			<pre>type DecodeHookFuncType func(<a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Type">Type</a>, <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Type">Type</a>, interface{}) (interface{}, <a href="/pkg/builtin/#error">error</a>)</pre>
+			<pre>type DecodeHookFuncType func(<a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Type">Type</a>, <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Type">Type</a>, interface{}) (interface{}, <a href="https://golang.org/pkg/builtin/#error">error</a>)</pre>
 
 			
 
@@ -1138,7 +1138,7 @@ DecodeHookFuncRaw is a DecodeHookFunc which has complete access to both the sour
 values.
 </p>
 
-			<pre>type DecodeHookFuncValue func(from <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Value">Value</a>, to <a href="/pkg/reflect/">reflect</a>.<a href="/pkg/reflect/#Value">Value</a>) (interface{}, <a href="/pkg/builtin/#error">error</a>)</pre>
+			<pre>type DecodeHookFuncValue func(from <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Value">Value</a>, to <a href="https://golang.org/pkg/reflect/">reflect</a>.<a href="https://golang.org/pkg/reflect/#Value">Value</a>) (interface{}, <a href="https://golang.org/pkg/builtin/#error">error</a>)</pre>
 
 			
 
@@ -1188,7 +1188,7 @@ up the most basic Decoder.
 					
 					
 				</h3>
-				<pre>func NewDecoder(config *<a href="#DecoderConfig">DecoderConfig</a>) (*<a href="#Decoder">Decoder</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+				<pre>func NewDecoder(config *<a href="#DecoderConfig">DecoderConfig</a>) (*<a href="#Decoder">Decoder</a>, <a href="https://golang.org/pkg/builtin/#error">error</a>)</pre>
 				<p>
 NewDecoder returns a new decoder for the given configuration. Once
 a decoder has been returned, the same configuration must not be used
@@ -1206,7 +1206,7 @@ again.
 					
 					
 				</h3>
-				<pre>func (d *<a href="#Decoder">Decoder</a>) Decode(input interface{}) <a href="/pkg/builtin/#error">error</a></pre>
+				<pre>func (d *<a href="#Decoder">Decoder</a>) Decode(input interface{}) <a href="https://golang.org/pkg/builtin/#error">error</a></pre>
 				<p>
 Decode decodes the given raw interface to the target pointer specified
 by the configuration.
@@ -1244,12 +1244,12 @@ and allows customization of various aspects of decoding.
     <span class="comment">// If ErrorUnused is true, then it is an error for there to exist</span>
     <span class="comment">// keys in the original map that were unused in the decoding process</span>
     <span class="comment">// (extra keys).</span>
-<span id="DecoderConfig.ErrorUnused"></span>    ErrorUnused <a href="/pkg/builtin/#bool">bool</a>
+<span id="DecoderConfig.ErrorUnused"></span>    ErrorUnused <a href="https://golang.org/pkg/builtin/#bool">bool</a>
 
 <span id="DecoderConfig.ZeroFields"></span>    <span class="comment">// ZeroFields, if set to true, will zero fields before writing them.</span>
     <span class="comment">// For example, a map will be emptied before decoded values are put in</span>
     <span class="comment">// it. If this is false, a map will be merged.</span>
-    ZeroFields <a href="/pkg/builtin/#bool">bool</a>
+    ZeroFields <a href="https://golang.org/pkg/builtin/#bool">bool</a>
 
     <span class="comment">// If WeaklyTypedInput is true, the decoder will make the following</span>
     <span class="comment">// &#34;weak&#34; conversions:</span>
@@ -1268,7 +1268,7 @@ and allows customization of various aspects of decoding.
     <span class="comment">//     element is weakly decoded. For example: &#34;4&#34; can become []int{4}</span>
     <span class="comment">//     if the target type is an int slice.</span>
     <span class="comment">//</span>
-<span id="DecoderConfig.WeaklyTypedInput"></span>    WeaklyTypedInput <a href="/pkg/builtin/#bool">bool</a>
+<span id="DecoderConfig.WeaklyTypedInput"></span>    WeaklyTypedInput <a href="https://golang.org/pkg/builtin/#bool">bool</a>
 
 <span id="DecoderConfig.Squash"></span>    <span class="comment">// Squash will squash embedded structs.  A squash tag may also be</span>
     <span class="comment">// added to an individual struct field using a tag.  For example:</span>
@@ -1276,7 +1276,7 @@ and allows customization of various aspects of decoding.
     <span class="comment">//  type Parent struct {</span>
     <span class="comment">//      Child `mapstructure:&#34;,squash&#34;`</span>
     <span class="comment">//  }</span>
-    Squash <a href="/pkg/builtin/#bool">bool</a>
+    Squash <a href="https://golang.org/pkg/builtin/#bool">bool</a>
 
 <span id="DecoderConfig.Metadata"></span>    <span class="comment">// Metadata is the struct that will contain extra metadata about</span>
     <span class="comment">// the decoding. If this is nil, then no metadata will be tracked.</span>
@@ -1288,7 +1288,7 @@ and allows customization of various aspects of decoding.
 
     <span class="comment">// The tag name that mapstructure reads for field names. This</span>
     <span class="comment">// defaults to &#34;mapstructure&#34;</span>
-<span id="DecoderConfig.TagName"></span>    TagName <a href="/pkg/builtin/#string">string</a>
+<span id="DecoderConfig.TagName"></span>    TagName <a href="https://golang.org/pkg/builtin/#string">string</a>
 }
 </pre>
 
@@ -1317,7 +1317,7 @@ errors that occur in the course of a single decode.
 </p>
 
 			<pre>type Error struct {
-<span id="Error.Errors"></span>    Errors []<a href="/pkg/builtin/#string">string</a>
+<span id="Error.Errors"></span>    Errors []<a href="https://golang.org/pkg/builtin/#string">string</a>
 }
 </pre>
 
@@ -1338,7 +1338,7 @@ errors that occur in the course of a single decode.
 					
 					
 				</h3>
-				<pre>func (e *<a href="#Error">Error</a>) Error() <a href="/pkg/builtin/#string">string</a></pre>
+				<pre>func (e *<a href="#Error">Error</a>) Error() <a href="https://golang.org/pkg/builtin/#string">string</a></pre>
 				
 				
 				
@@ -1350,7 +1350,7 @@ errors that occur in the course of a single decode.
 					
 					
 				</h3>
-				<pre>func (e *<a href="#Error">Error</a>) WrappedErrors() []<a href="/pkg/builtin/#error">error</a></pre>
+				<pre>func (e *<a href="#Error">Error</a>) WrappedErrors() []<a href="https://golang.org/pkg/builtin/#error">error</a></pre>
 				<p>
 WrappedErrors implements the errwrap.Wrapper interface to make this
 return value more useful with the errwrap and go-multierror libraries.
@@ -1375,11 +1375,11 @@ is tedious or difficult to get otherwise.
 
 			<pre>type Metadata struct {
 <span id="Metadata.Keys"></span>    <span class="comment">// Keys are the keys of the structure which were successfully decoded</span>
-    Keys []<a href="/pkg/builtin/#string">string</a>
+    Keys []<a href="https://golang.org/pkg/builtin/#string">string</a>
 
 <span id="Metadata.Unused"></span>    <span class="comment">// Unused is a slice of keys that were found in the raw value but</span>
     <span class="comment">// weren&#39;t decoded since there was no matching field in the result interface</span>
-    Unused []<a href="/pkg/builtin/#string">string</a>
+    Unused []<a href="https://golang.org/pkg/builtin/#string">string</a>
 }
 </pre>
 
